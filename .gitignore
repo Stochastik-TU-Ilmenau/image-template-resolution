@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# exclude data from source control by default
+/data/
+
+# exclude plots from source control by default
+/plots/
+
+# VS Code
+.vscode/
+
+# DotEnv configuration
+.env
+
+# Mac OS-specific storage files
+.DS_Store
