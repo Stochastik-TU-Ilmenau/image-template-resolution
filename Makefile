@@ -5,7 +5,7 @@
 .PHONY: all all_toy_data  all_mnist all_nfbs template_toy_data resolution_measure_toy_data visualization_toy_data template_mnist resolution_measure_mnist visualization_mnist normalize_nfbs template_nfbs resolution_measure_nfbs visualization_nfbs requirements clean_data clean_plots
 
 
-python		:= intelpython3 # set custom python interpreter
+python		:= python # set custom python interpreter
 data_raw	:= data/raw
 
 # Matplotlib backend: Agg (no gui)

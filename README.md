@@ -12,9 +12,8 @@ Matthias Glock, Thomas Hotz.
 
 In many image processing applications (e.g. computational anatomy) a groupwise registration is performed on a sample of images and a template image is simultaneously generated. From the template alone it is in general unclear to which extent the registered images are still misaligned, which means that some regions of the template represent the structural features in the sample images less reliably than others. In a sense, the template exhibits a lower resolution there. Guided by characteristic examples of misaligned image features in one dimension, we develop a visual measure to quantify the resolution at each location of a template which is based on the observation that misalignments between the registered sample images are reduced by smoothing with the strength of the smoothing being related to the magnitude of the misalignment. Finally the resulting resolution measure is applied to example datasets in two and three dimensions.
 
-## Running our code
 
-Project Organization:
+## Project Organization
 
     ├── LICENSE
     ├── Makefile
@@ -30,12 +29,32 @@ Project Organization:
         ├── visualization   <- scripts to create plots for datasets
         └── config.py       <- set global parameters
 
---------
 
-usage:
+## Running our code
+
+**Run workflow for MNIST dataset:**
 
 ```bash
-make all
 make all_mnist
+```
+
+This is equivalent to executing:
+```bash
+make template_mnist # downloads data when running for the first time
+make resolution_measure_mnist
+make visualization_mnist
+```
+
+**Run workflow for NFBS dataset:**
+
+```bash
 make all_nfbs
+```
+
+This is equivalent to executing:
+```bash
+make normalize_nfbs # downloads data when running for the first time
+make template_nfbs
+make resolution_measure_nfbs
+make visualization_nfbs
 ```
