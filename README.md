@@ -5,7 +5,7 @@ This is the official repository for
 
 **Quantifying the Resolution of a Template after Image Registration.**   
 Matthias Glock, Thomas Hotz.  
-(submitted to the IEEE for possible publication)
+[arXiv:2402.17617](https://arxiv.org/abs/2402.17617)
 
 
 ## Abstract
